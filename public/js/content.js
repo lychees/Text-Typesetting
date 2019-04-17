@@ -12,7 +12,7 @@ $(document).ready(function () {
         content = content.replace(/“/g, "「");
         content = content.replace(/”/g, "」");        
         content = content.replace(/([a-zA-Z0-9)'>)}\]])([\u4e00-\u9fa5])/g, "$1 $2");
-        content = content.replace(/([\u4e00-\u9fa5])([a-zA-Z0-9('<{\]])/g, "$1 $2");
+        content = content.replace(/([\u4e00-\u9fa5])([a-zA-Z0-9('<{\[]])/g, "$1 $2");
         setOutputTextAreaVal(content);
     });
 
